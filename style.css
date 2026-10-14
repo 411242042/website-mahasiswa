@@ -1,0 +1,368 @@
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #fff5f8;
+    color: #80546a;
+    line-height: 1.8;
+}
+
+/* Navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 7%;
+    background: #fffafd;
+    border-bottom: 2px solid #ffe0eb;
+    box-shadow: 0 3px 15px #e8a2bd20;
+}
+
+.logo {
+    color: #e66e9b;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu a {
+    color: #80546a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ef6f9f;
+}
+
+/* Header Utama */
+header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 75px 20px;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #ffc6da,
+        #f78fb3,
+        #ffb6cf
+    );
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 8px 25px #ef9cbd40;
+}
+
+.welcome {
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    margin-bottom: 12px;
+    text-shadow: 2px 3px 5px #c95f8c40;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.flower {
+    position: absolute;
+    font-size: 55px;
+    opacity: 0.85;
+}
+
+.flower-left {
+    top: 25px;
+    left: 7%;
+    transform: rotate(-20deg);
+}
+
+.flower-right {
+    right: 7%;
+    bottom: 25px;
+    transform: rotate(20deg);
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #e66e9b;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 5px 15px #b94f7b30;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff0f5;
+    transform: translateY(-3px);
+}
+
+/* Konten Utama */
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Card */
+section {
+    position: relative;
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 28px;
+    border: 2px solid #ffe0eb;
+    border-radius: 28px;
+    box-shadow: 0 8px 25px #e8a2bd25;
+    transition: transform 0.3s, box-shadow 0.3s;
+    scroll-margin-top: 20px;
+}
+
+section::after {
+    content: "✿";
+    position: absolute;
+    right: 18px;
+    bottom: 10px;
+    color: #ffacc9;
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px #e8a2bd40;
+}
+
+/* Judul Bagian */
+h2 {
+    color: #e66e9b;
+    font-size: 23px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #ffc6da;
+}
+
+h2::before {
+    content: "🌸 ";
+}
+
+/* Paragraf */
+section p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #d85f90;
+}
+
+.decoration {
+    color: #e66e9b;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* Identitas Mahasiswa */
+.info p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ffd5e3;
+}
+
+.info strong {
+    min-width: 125px;
+}
+
+/* Pendidikan */
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px;
+    background: #fff5f8;
+    border-radius: 20px;
+    border: 1px solid #ffe0eb;
+}
+
+.icon {
+    font-size: 40px;
+    background: #ffe0eb;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Hobi */
+.hobby-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.hobby-card {
+    text-align: center;
+    background: #fff5f8;
+    border: 1px solid #ffe0eb;
+    border-radius: 20px;
+    padding: 20px 10px;
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    background: #ffe4ee;
+    transform: translateY(-4px);
+}
+
+.hobby-card span {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hobby-card p {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* Kutipan */
+.quote {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    color: #e66e9b;
+    background: #fff0f5;
+    border-radius: 15px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #f78fb3,
+        #e978a3
+    );
+    padding: 35px 15px;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 -5px 20px #e8a2bd25;
+}
+
+.footer-flower {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff70;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+        text-align: center;
+        padding: 18px 12px;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    header {
+        padding: 60px 15px;
+        border-radius: 0 0 35px 35px;
+    }
+
+    .flower {
+        font-size: 35px;
+    }
+
+    .flower-left {
+        left: 3%;
+    }
+
+    .flower-right {
+        right: 3%;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 14px;
+    }
+
+    section {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .education-card {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .icon {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    .hobby-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info p {
+        display: block;
+    }
+
+    .info strong,
+    .info span {
+        display: block;
+    }
+}
