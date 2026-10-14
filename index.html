@@ -4,161 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Website Saya | Yohana Mutiara Anggun</title>
-
+    <title>Website Yohana Mutiara Anggun</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigasi Website -->
-    <nav class="navbar">
-        <a href="#" class="logo">🌸 Website Saya</a>
+    <header id="beranda">
+        <nav>
+            <div class="logo">🌸 Website Saya</div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#hobi">Hobi</a></li>
+            </ul>
+        </nav>
 
-        <div class="menu">
-            <a href="#">Beranda</a>
-            <a href="#tentang">Tentang Saya</a>
-            <a href="#pendidikan">Pendidikan</a>
-            <a href="#hobi">Hobi</a>
+        <div class="hero">
+            <p class="sapaan">WELCOME TO MY WEBSITE</p>
+            <h1>Halo, Saya Yohana! 🌷</h1>
+            <p>Mahasiswa Teknik Informatika yang senang belajar teknologi dan hal baru.</p>
+            <a href="#tentang" class="tombol">Kenali Saya</a>
         </div>
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="flower flower-left">🌷</div>
-        <div class="flower flower-right">🌸</div>
-
-        <p class="welcome">WELCOME TO MY WEBSITE</p>
-
-        <h1>Halo, Saya Yohana! ♡</h1>
-
-        <p class="subtitle">
-            Mahasiswa Universitas Dian Nusantara
-        </p>
-
-        <a href="#tentang" class="btn">Kenali Saya 🌷</a>
     </header>
 
-    <!-- Konten Utama -->
     <main>
-
-        <!-- Tentang Saya -->
-        <section id="tentang">
-            <h2>Tentang Saya</h2>
-
-            <p>Halo semuanya! ♡</p>
-
+        <section id="tentang" class="kartu">
+            <h2>🌸 Tentang Saya</h2>
             <p>
-                Perkenalkan, nama saya
-                <strong>Yohana Mutiara Anggun</strong>.
-                Saya adalah mahasiswa Universitas Dian Nusantara,
-                Fakultas Teknik dan Informatika,
-                Program Studi Teknik Informatika.
+                Halo! Nama saya Yohana Mutiara Anggun. Saya adalah mahasiswa
+                Universitas Dian Nusantara, Program Studi Teknik Informatika.
+                Saya membuat website ini untuk memperkenalkan diri sekaligus
+                menerapkan materi HTML dan CSS yang saya pelajari.
             </p>
-
-            <p>
-                Saat ini saya sedang belajar membuat website
-                menggunakan HTML dan CSS. Saya ingin terus belajar,
-                mengembangkan kreativitas, dan menambah pengetahuan
-                di bidang teknologi.
-            </p>
-
-            <p class="decoration">Made with love ♡ 🌸</p>
         </section>
 
-        <!-- Identitas -->
-        <section id="identitas">
-            <h2>Identitas Mahasiswa</h2>
+        <section class="kartu">
+            <h2>🎀 Identitas Mahasiswa</h2>
+            <p>Berikut adalah informasi singkat mengenai diri saya.</p>
 
-            <div class="info">
-                <p>
-                    <strong>Nama</strong>
-                    <span>Yohana Mutiara Anggun</span>
-                </p>
-
-                <p>
-                    <strong>Universitas</strong>
-                    <span>Universitas Dian Nusantara</span>
-                </p>
-
-                <p>
-                    <strong>Fakultas</strong>
-                    <span>Teknik dan Informatika</span>
-                </p>
-
-                <p>
-                    <strong>Program Studi</strong>
-                    <span>Teknik Informatika</span>
-                </p>
+            <div class="tabel-container">
+                <table>
+                    <tr>
+                        <th>Informasi</th>
+                        <th>Keterangan</th>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Yohana Mutiara Anggun</td>
+                    </tr>
+                    <tr>
+                        <td>Universitas</td>
+                        <td>Universitas Dian Nusantara</td>
+                    </tr>
+                    <tr>
+                        <td>Fakultas</td>
+                        <td>Teknik dan Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>Program Studi</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>Tahun</td>
+                        <td>2026</td>
+                    </tr>
+                </table>
             </div>
         </section>
 
-        <!-- Pendidikan -->
-        <section id="pendidikan">
-            <h2>Pendidikan 🎓</h2>
-
-            <div class="education-card">
-                <div class="icon">🎓</div>
-
-                <div>
-                    <h3>Universitas Dian Nusantara</h3>
-                    <p>Program Studi Teknik Informatika</p>
-                    <p>Belajar pemrograman dan teknologi informasi.</p>
-                </div>
+        <section id="pendidikan" class="kartu">
+            <h2>📚 Pendidikan</h2>
+            <div class="item-pendidikan">
+                <h3>Universitas Dian Nusantara</h3>
+                <p>Program Studi Teknik Informatika</p>
+            </div>
+            <div class="item-pendidikan">
+                <h3>SMA Negeri 1 Sidareja</h3>
+                <p>Pendidikan Sekolah Menengah Atas</p>
             </div>
         </section>
 
-        <!-- Hobi dan Minat -->
-        <section id="hobi">
-            <h2>Hobi dan Minat 🎀</h2>
-
-            <div class="hobby-list">
-                <div class="hobby-card">
-                    <span>🌷</span>
-                    <p>Belajar Hal Baru</p>
-                </div>
-
-                <div class="hobby-card">
-                    <span>💻</span>
-                    <p>Teknologi</p>
-                </div>
-
-                <div class="hobby-card">
-                    <span>🎨</span>
-                    <p>Desain Kreatif</p>
-                </div>
+        <section id="hobi" class="kartu">
+            <h2>🌼 Hobi dan Minat</h2>
+            <div class="daftar-hobi">
+                <div class="hobi">💻 Belajar Teknologi</div>
+                <div class="hobi">🌷 Menjelajahi Hal Baru</div>
+                <div class="hobi">🎨 Desain Kreatif</div>
+                <div class="hobi">📱 Membuat Konten</div>
             </div>
         </section>
 
-        <!-- Tujuan Belajar -->
-        <section id="tujuan">
-            <h2>Tujuan Saya ✨</h2>
-
+        <section class="kartu">
+            <h2>✨ Tujuan Saya</h2>
             <p>
-                Saya ingin menjadi pribadi yang kreatif,
-                terus berkembang, dan mampu membuat website
-                yang menarik serta bermanfaat bagi banyak orang.
-            </p>
-
-            <p class="quote">
-                "Little steps every day, big dreams someday." ♡
+                Saya ingin terus meningkatkan kemampuan di bidang teknologi
+                informasi, memahami pemrograman, dan membuat website yang
+                bermanfaat. Saya berharap ilmu yang saya pelajari dapat membantu
+                saya meraih cita-cita dan memperoleh pengalaman kerja yang baik.
             </p>
         </section>
 
+        <section class="kartu">
+            <h2>🌐 Referensi Pembelajaran HTML</h2>
+            <p>Berikut contoh penggunaan elemen iframe dalam HTML.</p>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.w3schools.com/html/"
+                    title="Tutorial HTML W3Schools"
+                    loading="lazy">
+                </iframe>
+            </div>
+            <p class="catatan">
+                Jika halaman tidak muncul, kunjungi
+                <a href="https://www.w3schools.com/html/"
+                   target="_blank" rel="noopener noreferrer">
+                    W3Schools HTML Tutorial
+                </a>.
+            </p>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p class="footer-flower">🌸 🌷 ♡ 🌷 🌸</p>
-
-        <h3>Thank You for Visiting! ♡</h3>
-
-        <p>Website pribadi Yohana Mutiara Anggun</p>
-
-        <p class="copyright">
-            &copy; 2026 Website Saya. All Rights Reserved.
-        </p>
+        <p>Made with ♡ by Yohana Mutiara Anggun</p>
+        <p>&copy; 2026 Website Mahasiswa</p>
     </footer>
 
 </body>
